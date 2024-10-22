@@ -1,0 +1,44 @@
+/* Importa fontes do Google Fonts: Poppins e Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Define variáveis de cores e fontes para uso em todo o CSS */
+:root {
+    --cor-primaria: #0A1F44; /* Cor principal */
+    --cor-secundaria: #ffffff; /* Cor de fundo */
+    --cor-terciaria: #ffc933; /* Cor terciária */
+    --cor-hover: #1C3D71; /* Cor de hover */
+    --fonte-primaria: 'Poppins', sans-serif; /* Fonte primária */
+    --fonte-secundaria: 'Roboto', sans-serif; /* Fonte secundária */
+}
+
+body{
+    margin: 0; /* Remove margens de todos os elementos */
+    padding: 0; /* Remove preenchimentos de todos os elementos */
+    box-sizing: border-box; /* Inclui preenchimento e borda no cálculo da largura e altura */
+    font-family: var(--fonte-secundaria);
+
+}
+
+.layout-container_grid{
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "m main aside"
+      "footer footer footer";
+}
+
+.naveg_contact{
+    grid-area: header;
+}
+
+.naveg_contact_link{
+    text-align: center;
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: var(--cor-primaria); /* Cor do texto dos links */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    display: block; /* Faz com que os links ocupem toda a largura disponível */
+}
+.naveg_contact_link:hover{
+    color: var(--cor-terciaria); /* Muda a cor ao passar o mouse */
+}
