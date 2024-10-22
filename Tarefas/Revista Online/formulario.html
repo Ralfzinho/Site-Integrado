@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trabalhe Conosco</title>
+</head>
+<body>
+
+<h2>Trabalhe Conosco</h2>
+
+<form action="/banco de dados.html" method="post" enctype="multipart/form-data">
+
+  <fieldset>
+    <legend>Dados Pessoais:</legend>
+    <label for="fname">Primeiro Nome:</label><br>
+    <input type="text" id="fname" name="firstname" required><br>
+
+    <label for="lname">Sobrenome:</label><br>
+    <input type="text" id="lname" name="lastname" required><br>
+
+    <label for="date">Data de Nascimento:</label><br>
+    <input type="date" id="date" name="date" required><br>
+
+    <label for="gender">Gênero:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Masculino</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Feminino</label><br>
+    <input type="radio" id="outro" name="gender" value="outro">
+    <label for="outro">Outro</label><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="password">Senha:</label><br>
+    <input type="password" id="password" name="password" required><br>
+
+    <label for="photo">Foto de Perfil:</label><br>
+    <input type="file" id="photo" name="photo"><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Experiência Profissional:</legend>
+    <label for="cargo">Último Cargo Ocupado:</label><br>
+    <input type="text" id="cargo" name="cargo"><br>
+
+    <legend>Historico:</legend>
+    <label for="empresa">Empresa Anterior:</label><br>
+    <input type="text" id="empresa" name="empresa"><br>
+    <label for="anos_de_empresa"> Anos de Experiência</label><br>
+    <input type="number" id="anos_de_empresa" name=" anos_de_empresa"><br>
+    <label for="areas_escolidas">Áreas de especialização</label><br>
+    <input type="checkbox" id="areas_escolidas" name="tecnologia">
+    <label for="areas_escolidas">Tecnologia</label><br>
+    <input type="checkbox" id="areas_escolidas" name="marketing">
+    <label for="areas_escolidas">Marketing</label><br>
+    <input type="checkbox" id="areas_escolidas" name="finanças">
+    <label for="areas_escolidas">finanças</label><br>
+    <input type="checkbox" id="areas_escolidas" name="suporte">
+    <label for="areas_escolidas">Suporte</label><br>
+    
+  </fieldset>
+  <fieldset>
+    <legend>Educação:</legend>
+    <label for="escola">Nível de escolaridade (opção de seleção entre ensino fundamental, médio, técnico, graduação, pós-graduação)</label><br>
+    <select id="escola" name="escola">
+      <option value="ensino_fundametal">Ensino Fundamental</option>
+      <option value="ensino_medio">Ensino Médio</option>
+      <option value="ensino_tecnico">Técnico</option>
+      <option value="ensino_graduacao">Graduação</option>
+      <option value="ensino_pos_graduacao">Pós-graduação</option>
+    </select><br>
+    <label for="escola_nome">Instituição de ensino:</label><br>
+    <input type="text" id="escola_nome" name="escola_nome"><br>
+    <label for="escola_curso">Curso:</label><br>
+    <input type="text" id="escola_curso" name="escola_curso"><br>
+    <label for="escola_conclusao">Ano de conclusão:</label><br>
+    <input type="text" id="escola_conclusao" name="escola_conclusao"><br>
+  </fieldset>
+  <fieldset>
+    <legend>Anexo de Documentos:</legend>
+    <label for="anexo_curriculo">Currículo</label><br>
+    <input type="file" id="anexo_curriculo" name="anexo_curriculo"><br>
+    <label for="anexo_apresentacao">Anexo de Documentos:</label><br>
+    <input type="file" id="anexo_apresentacao" name="anexo_apresentacao"><br>
+    <label for="anexo_foto">Fotografia recente:</label><br>
+    <input type="file" id="anexo_foto" name="anexo_foto"><br>
+  </fieldset>
+ 
+  <fieldset>
+    <legend>Motivação e perspectivas:</legend>
+    <label for="pergunta_emprego">Por que quero este emprego?</label> <br>
+    <textarea id="pergunta_emprego" rows="20" cols="50"></textarea><br>
+    <label for="pergunta_emprego">Salário almejado</label> <br>
+    <div class="slidecontainer">
+      <input type="range" min="1000" max="5000" value="50" class="slider" id="myRange">
+    </div>
+  </fieldset>
+  <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>

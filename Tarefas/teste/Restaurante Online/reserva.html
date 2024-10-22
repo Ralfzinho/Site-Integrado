@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/pagina Inicial/pagina_inicial.css">
+        <link rel="stylesheet" href="./style/reserva/reserva.css">
+        <link rel="shortcut icon" type="imagex/png" href="./style/pagina Inicial/iconn.png">
+        <title>Reserva - Estrelas no Prato</title>
+    </head>
+    <header>
+        <nav class="barra_navegacao">
+            <ul class="barra_navegacao">
+                <li><img class="logo_inicial" src="https://cdn.midjourney.com/8919d838-7531-440f-9d7c-0829970c6dcb/0_2.png" alt="Logo do restaurante Estrela no Prato"></li>
+                <li class="barra_navegacao_titulo"><h1>Estrelas no Prato</h1></li>
+                <li> <a class="barra_navegacao_link" href="pagina__principal.html">Inicio</a></li>
+                <li> <a class="barra_navegacao_link" href="sobre_nos.html">Sobre Nós</a></li>
+                <li> <a class="barra_navegacao_link" href="Cardapio.html">Nosso Cardapio</a></li>
+                <li> <a class="barra_navegacao_link" href="reserva.html">Reserva de Pedido</a></li>
+                <li> <a class="barra_navegacao_link" href="trabalhe_conosco.html">Trabelhe Conosco</a></li>
+                <li> <a class="barra_navegacao_link" href="../Revista Online/pagina_principal.html">Nossa Revista</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <main>
+            <div class="layout-container">
+                <div class="formulario_geral">
+                    <form action="get">
+                        <h2 class="formulario_titulo">Formulário de Reserva</h2>
+                        <h4 class="formulario_titulo">Informações Pessoais</h4>
+                    
+                        <div class="formulario_info">
+                            <label class="formulario_legenda" for="nome">Nome Completo:</label>
+                            <input class="formulario_acao" type="text" id="nome" name="nome" placeholder="Digite seu Nome Completo*" required>
+                        </div>
+                        <div class="formulario_info">
+                            <label class="formulario_legenda" for="email">E-mail:</label>
+                            <input class="formulario_acao" type="email" id="email" name="email" placeholder="Digite Seu e-mail*" required>
+                        </div>
+                        <div class="formulario_info">
+                            <label class="formulario_legenda" for="telefone">Telefone:</label>
+                            <input class="formulario_acao" type="text" id="telefone" name="telefone" placeholder="Digite seu telefone com DDD*" required>
+                        </div>
+                        <h4 class="formulario_titulo">Detalhes da Reserva</h4>
+
+                        <div>
+                            <label class="formulario_legenda" for="data">Data da Reserva:</label>
+                            <input class="formulario_acao" type="date" id="data" name="data" placeholder="Selecione sua Data*" required>
+                        </div>
+                        <div>
+                            <label class="formulario_legenda" for="hora">Horario da Reserva:</label>
+                            <input class="formulario_acao" type="time" id="hora" name="hora" placeholder="Selecione seu horario*" required>
+                        </div>
+                        <div>
+                            <label class="formulario_legenda" for="convidados">Numero de Convidados (1 a 10):</label>
+                            <input class="formulario_acao" type="number" id="convidados" name="convidados" min="1" max="10" placeholder="Selecione Numero de Convidados">
+                        </div>
+                        <div>
+                            <label class="formulario_legenda" for="tipo">Tipo de Experiência:</label>
+                            <input class="formulario_opcao" type="radio" id="tipo" name="tipo" value="1"> Jantar Casual
+                            <input class="formulario_opcao" type="radio" id="tipo" name="tipo" value="1"> Evento Especial 
+                            <input class="formulario_opcao" type="radio" id="tipo" name="tipo" value="1"> Jantar Sob as Estrelas (visão das constelações projetadas) 
+                            <input class="formulario_opcao" type="radio" id="tipo" name="tipo" value="1"> Menu Degustação Exclusivo
+                        </div>
+                        <h4 class="formulario_titulo">Preferências e Solicitações Especiais</h4>
+                        <div>
+                            <label class="formulario_legenda" for="mesa">Mesa Preferida:</label>
+                            <input class="formulario_opcao" type="checkbox" id="mesa" value="1"> Próxima à janela (vista das projeções galácticas)
+                            <input class="formulario_opcao" type="checkbox" id="mesa" value="1"> Ambiente privado
+                            <input class="formulario_opcao" type="checkbox" id="mesa" value="1"> Próximo à área do chef
+                            <input class="formulario_opcao" type="checkbox" id="mesa" value="1"> Sem preferência
+                        </div>
+                        <div>
+                            <label class="formulario_legenda" for="alergia">Alergias ou Restrições Alimentares:</label>
+                            <textarea class="formulario_acao" name="alergia" id="alergia" cols="30" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <label class="formulario_legenda" for="extras">Solicitações Especiais:</label>
+                            <textarea class="formulario_acao" name="alergia" id="alergia" cols="30" rows="10"></textarea>
+                        </div>
+                        <h4 class="formulario_titulo">Confirmação</h4>
+                        <div>
+                            <label class="formulario_legenda" for="Confirmacao">Notificação de Confirmação por E-mail ou SMS:</label> 
+                            <input class="formulario_opcao" type="checkbox" name="Confirmacao" id="Confirmacao"> E-mail                
+                            <input class="formulario_opcao" type="checkbox" name="Confirmacao" id="Confirmacao"> SMS
+                        </div>
+                        <div>
+                            <input class="formulario_botao"  type="submit" value="Reserve Agora">
+                            <script>
+                                function msg() {
+                                alert("Reservado com sucesso");
+                                }
+                            </script>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

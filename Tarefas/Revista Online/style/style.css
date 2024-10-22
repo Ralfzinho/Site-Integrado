@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #FD2222;
+    --cor-hover: #272727;
+    --fonte-primaria:'Krona One', sans-serif;
+    --fonte-secundaria:'Montserrat', sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.titulo{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    text-align: center;
+}
+
+.subtitulo{
+    text-align: center;
+}
+.apresentacao{
+    background-color: var(--cor-primaria);
+}
+.cabecalho{
+    padding: 0% 0% 0% 0% ;
+    font-family:'Krona One', sans-serif;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+
+}
+
+.cabecalho_menu{
+    margin-top: 1%;
+    margin-left: 0%;
+}
+.cabecalho_menu_principal{
+    margin-left: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    background-color: red;
+    
+}
+
+.cabecalho_menu_artigo{
+    display: inline;
+    margin-right: auto;
+    font:bold;
+    font-family: var(--fonte-primaria);
+    
+}
+.cabecalho_menu_link{
+    text-decoration: none;
+    font:bold;
+    font-size: 11pt;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    padding-right: 11%;
+    padding-left: 2%;
+
+}
+
+.cabecalho_menu_link:hover{
+    color: rgb(89, 0, 255);
+}
+.cabecalho_menu_link:visited{
+    color: rgb(25, 0, 253);
+}
+
+.artigo__principal{
+    padding-left: 15px;
+}
+.artigo__principal__titulo{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    margin-top: 50px;
+    margin-left: 4px;
+}
+.artigo__principal__texto{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+.artigo__principal__texto:first-of-type{
+    font-family: var(--fonte-secundaria);
+    color: red;
+    margin-bottom: 2%;
+}
+
+.artigo__principal__texto:nth-child(2)::first-letter{
+    font-size: 25px;
+    font-family:var(--fonte-secundaria)
+}
+
+.rodape{
+    margin-top: 10px;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    background-color: red;
+}

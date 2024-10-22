@@ -1,0 +1,121 @@
+/* Importa fontes do Google Fonts: Poppins e Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Define variáveis de cores e fontes para uso em todo o CSS */
+:root {
+    --cor-primaria: #0A1F44; /* Cor principal */
+    --cor-secundaria: #ffffff; /* Cor de fundo */
+    --cor-terciaria: #ffc933; /* Cor terciária */
+    --cor-hover: #1C3D71; /* Cor de hover */
+    --fonte-primaria: 'Poppins', sans-serif; /* Fonte primária */
+    --fonte-secundaria: 'Roboto', sans-serif; /* Fonte secundária */
+}
+
+body{
+    margin: 0; /* Remove margens de todos os elementos */
+    padding: 0; /* Remove preenchimentos de todos os elementos */
+    box-sizing: border-box; /* Inclui preenchimento e borda no cálculo da largura e altura */
+}
+
+
+/* Estilo do contêiner do menu */
+.container_social {
+    margin-left: auto;
+    display: flex; /* Usando flexbox para o layout */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+    gap: 20px; /* Espaçamento entre os itens */
+    flex-direction: column;
+}
+
+
+.banner {
+    width: 100%; /* O banner ocupará 100% da largura da página */
+    height: 250px; /* Defina a altura desejada para o banner */
+    background-image: url('../assets/icon1.png'); /* Coloque o caminho correto da sua imagem */
+    background-size: cover; /* A imagem cobrirá todo o espaço do banner */
+    background-position: center; /* Centraliza a imagem no banner */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    border-radius: 500px;
+    margin-top: 10px;
+}
+
+
+.cards{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+/* Estilo para cada item do menu */
+.social {
+    background-color: #fff; /* Fundo branco para os itens do menu */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Oculta o conteúdo que excede as bordas */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve para um efeito de profundidade */
+    width: 400px; /* Largura padrão dos itens do menu */
+    height: 150px;
+    padding: 50px; /* Espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+/* Estilo do título do item do menu */
+.social-titulo {
+    font-size: 1.5em; /* Tamanho da fonte do título */
+    color: var(--cor-primaria); /* Cor do título usando a variável definida */
+    margin-top: 25px; /* Margem acima do título */
+    font-family: var(--fonte-secundaria); /* Fonte do título */
+}
+
+/* Estilo do texto descritivo do item do menu */
+.social-texto {
+    color: var(--cor-hover); /* Cor do texto usando a variável de hover */
+    margin: 5px 0; /* Margens vertical do texto */
+    font-family: var(--fonte-secundaria); /* Fonte do texto */
+}
+
+.conteudo_adicional_link{
+    text-decoration:underline; /* Remove sublinhado dos links */
+    color: var(--cor-primaria); /* Cor do texto dos links */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    display: block; /* Faz com que os links ocupem toda a largura disponível */
+    margin-left: 0px; /* Espaçamento à direita */
+    margin-bottom: 15vh; /* Espaçamento abaixo dos links */   
+}
+
+.fa-brands{
+    transform: scale(1.7);
+
+}
+.fa-brands:hover{
+transform: scale(1.8);
+transition: 0.5;
+}
+
+.layout-rodape {
+    background-color: var(--cor-secundaria); /* Cor de fundo do rodapé */
+    text-align: center;
+    padding: 10px;
+    width: 100%; /* Garante que o rodapé ocupe toda a largura */
+    justify-items: center;
+}
+
+.layout-rodape-lista{
+    display: flex;
+    align-items: center;
+}
+
+.img_rodape{
+    width: 60px; /* Define a largura do círculo */
+    height: 60px; /* Define a altura do círculo, deve ser igual à largura */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorção */
+    overflow: hidden; /* Oculta qualquer parte da imagem que extrapolar o círculo */
+    margin: 5px;
+}
