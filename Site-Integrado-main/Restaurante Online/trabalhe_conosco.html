@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/pagina Inicial/pagina_inicial.css">
+        <link rel="stylesheet" href="./style/trabalhe conosco/trabalhe_conosco.css">
+        <link rel="shortcut icon" type="imagex/png" href="./style/pagina Inicial/iconn.png">
+        <title>Reserva - Estrelas no Prato</title>
+    </head>
+    <header>
+        <nav class="barra_navegacao">
+            <ul class="barra_navegacao">
+                <li><img class="logo_inicial" src="https://cdn.midjourney.com/8919d838-7531-440f-9d7c-0829970c6dcb/0_2.png" alt="Logo do restaurante Estrela no Prato"></li>
+                <li class="barra_navegacao_titulo"><h1>Estrelas no Prato</h1></li>
+                <li> <a class="barra_navegacao_link" href="pagina__principal.html">Inicio</a></li>
+                <li> <a class="barra_navegacao_link" href="sobre_nos.html">Sobre Nós</a></li>
+                <li> <a class="barra_navegacao_link" href="Cardapio.html">Nosso Cardapio</a></li>
+                <li> <a class="barra_navegacao_link" href="reserva.html">Reserva de Pedido</a></li>
+                <li> <a class="barra_navegacao_link" href="trabalhe_conosco.html">Trabelhe Conosco</a></li>
+                <li> <a class="barra_navegacao_link" href="../Revista Online/pagina_principal.html">Nossa Revista</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <main>
+            <div class="layout-container">
+                <div class="formulario_geral">
+                    <form action="get">
+                        <h2 class="formulario_titulo">Trabalhe Conosco</h2>
+                        <h4 class="formulario_titulo">Informações Pessoais</h4>
+                    
+                        <div class="formulario_info">
+                            <label class="formulario_legenda" for="nome">Nome Completo:</label>
+                            <input class="formulario_acao" type="text" id="nome" name="nome" placeholder="Digite seu Nome Completo*" required>
+                        </div>
+                        <div class="formulario_info">
+                            <label class="formulario_legenda" for="email">E-mail:</label>
+                            <input class="formulario_acao" type="email" id="email" name="email" placeholder="Digite Seu e-mail*" required>
+                        </div>
+                        <div class="formulario_info">
+                            <label class="formulario_legenda" for="telefone">Telefone:</label>
+                            <input class="formulario_acao" type="text" id="telefone" name="telefone" placeholder="Digite seu telefone com DDD*" required>
+                        </div>
+                        <div class="formulario_info">
+                            <label class="formulario_legenda" for="datanascimento">Data de Nascimento:</label>
+                            <input class="formulario_acao" type="date" id="datanascimento" name="datanascimento" placeholder="Digite sua data de nascimento*" required>
+                        </div>
+                        <h4 class="formulario_titulo">Cargo de Interesse</h4>
+
+                        <div>
+                            <label class="formulario_legenda" for="data">Posição Desejada:</label>
+                            <input class="formulario_opcao" type="radio" id="tipo" name="tipo" value="1"> Garçom/Garçonete
+                            <input class="formulario_opcao" type="radio" id="tipo" name="tipo" value="2"> Chef de Cozinha
+                            <input class="formulario_opcao" type="radio" id="tipo" name="tipo" value="3"> Auxiliar de Cozinha 
+                            <input class="formulario_opcao" type="radio" id="tipo" name="tipo" value="4"> Recepcionista
+                            <input class="formulario_opcao" type="radio" id="tipo" name="tipo" value="5"> Sommelier
+                            <input class="formulario_opcao" type="radio" id="tipo" name="tipo" value="6"> Gerente de Restaurante
+                            <input class="formulario_opcao" type="radio" id="tipo" name="tipo" value="7"> Outro:
+                            <textarea class="formulario_acao" name="Outro" id="Outro" cols="30" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <label class="formulario_legenda" for="jornada">Tipo de Jornada:</label>
+                            <input class="formulario_opcao" type="checkbox" id="jornada" name="Integral" placeholder="Selecione seu horario*" required> Integral
+                            <input class="formulario_opcao" type="checkbox" id="jornada" name="Meio período" placeholder="Selecione seu horario*" required> Meio período
+                            <input class="formulario_opcao" type="checkbox" id="jornada" name="Freelancer" placeholder="Selecione seu horario*" required> Freelancer
+                        </div>
+                        <h4 class="formulario_titulo">Experiência Profissional</h4>
+                        <div>
+                            <label class="formulario_legenda" for="experiencia">Último Emprego ou Experiência Relevante:</label>
+                            <textarea class="formulario_acao" name="experiencia" id="experiencia" cols="30" rows="10"  placeholder="Digite aqui um breve resumo"></textarea>
+                        </div>
+                        <div>
+                            <label class="formulario_legenda" for="tempo_experiencia">Tempo de Experiência na Área:</label>
+                            <input class="formulario_opcao" type="checkbox" id="tempo_experiencia" name="Menos de 1 ano" placeholder="Selecione seu horario*" required> Menos de 1 ano
+                            <input class="formulario_opcao" type="checkbox" id="tempo_experiencia" name="1 a 3 anos" placeholder="Selecione seu horario*" required> 1 a 3 anos
+                            <input class="formulario_opcao" type="checkbox" id="tempo_experiencia" name="3 a 5 anos" placeholder="Selecione seu horario*" required> 3 a 5 anos
+                            <input class="formulario_opcao" type="checkbox" id="tempo_experiencia" name="Mais de 5 anos" placeholder="Selecione seu horario*" required> Mais de 5 anos
+                            <label class="formulario_legenda" for="tempo_experiencia">Habilidades e Competências:</label>
+                            <textarea class="formulario_acao" name="resumo_experiencia" id="tempo_experiencia" cols="30" rows="10"></textarea>
+                        <h4 class="formulario_titulo">Anexar Currículo</h4>
+                        <div>
+                            <label class="formulario_legenda" for="Currículo">Upload do Currículo (PDF, DOC):</label>
+                            <label class="formulario_envioarquivo1" for="up_arquivo">Selecione um Arquivo</label>
+                            <input class="formulario_envioarquivo" id="up_arquivo" type="file">
+                            <label class="formulario_legenda" for="Currículo_apresentacao">Carta de Apresentação (Opcional):</label>
+                            <textarea class="formulario_acao" name="CtApresentação" id="Currículo_apresentacao" cols="30" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <label class="formulario_legenda" for="alergia">Alergias ou Restrições Alimentares:</label>
+                            <textarea class="formulario_acao" name="alergia" id="alergia" cols="30" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <label class="formulario_legenda" for="extras">Solicitações Especiais:</label>
+                            <textarea class="formulario_acao" name="alergia" id="alergia" cols="30" rows="10"></textarea>
+                        </div>
+                        <h4 class="formulario_titulo">Confirmação</h4>
+                        <div>
+                            <label class="formulario_legenda" for="Confirmacao">Notificação de Confirmação por E-mail ou SMS:</label> 
+                            <input class="formulario_opcao" type="checkbox" name="Confirmacao" id="Confirmacao"> E-mail                
+                            <input class="formulario_opcao" type="checkbox" name="Confirmacao" id="Confirmacao"> SMS
+                        </div>
+                        <div>
+                            <input class="formulario_botao"  type="submit" value="Reserve Agora">
+                            <script>
+                                function msg() {
+                                alert("Reservado com sucesso");
+                                }
+                            </script>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
