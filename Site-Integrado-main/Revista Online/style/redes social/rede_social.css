@@ -15,25 +15,91 @@
 body{
     margin: 0; /* Remove margens de todos os elementos */
     padding: 0; /* Remove preenchimentos de todos os elementos */
-    font-family: var(--fonte-secundaria);}
+    font-family: var(--fonte-primaria);
+}
 
-#container{
-    display: grid;
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.3fr 2.5fr 0.9fr 0.3fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
     grid-template-areas:
-    'cabecalho cabecalho'
-    'nav       nav'
-    'banner   banner'
-    'social   social'
-    'rodape   rodape';
+      "Cabecalho Cabecalho Cabecalho Cabecalho"
+      "Navegacao Navegacao Navegacao Navegacao"
+      "Conteudo Conteudo Conteudo Aside"
+      "Conteudo Conteudo Conteudo Aside"
+      "Rodape Rodape Rodape Rodape";
 }
+  
+.Cabecalho { grid-area: Cabecalho; }
 
-header{
-    grid-area: cabecalho;
-    background-image: url(../assets/icon.png);
-    background-size: 100%;
+.Cabecalho{
+    background-image: url('../assets/icon.png');
     background-position: 100%;
+    background-size: 100%;
+    text-align: center;
 }
 
-nav{
-    grid-area: nav span 2;
+.logo_img{
+    margin-top: 10px;
+    border-radius: 50%;
 }
+
+.Navegacao { grid-area: Navegacao; }
+
+.nav_lista{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav_link{
+    text-decoration: none;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-primaria);
+    margin: 5px;
+}
+
+.nav_link:hover{
+    color: var(--cor-terciaria);
+}
+
+
+  
+.Aside { grid-area: Aside; }
+  
+.Conteudo {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Banner Banner Banner"
+      "social social social"
+      "social social social";
+    grid-area: Conteudo;
+}
+  
+.Banner { grid-area: Banner; }
+  
+.social {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "fb twt tk"
+      ". . ."
+      ". . .";
+    grid-area: social;
+}
+  
+.fb { grid-area: fb; }
+  
+.twt { grid-area: twt; }
+  
+.tk { grid-area: tk; }
+
+.Rodape { grid-area: Rodape; }
+  
