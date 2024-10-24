@@ -151,7 +151,9 @@ body {
 .layout-rodape-lista{
     display: flex;
     align-items: center;
+    flex-direction: column-reverse;
 }
+
 
 .img_rodape{
     width: 60px; /* Define a largura do círculo */

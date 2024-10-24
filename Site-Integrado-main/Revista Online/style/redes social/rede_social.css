@@ -16,6 +16,7 @@ body{
     margin: 0; /* Remove margens de todos os elementos */
     padding: 0; /* Remove preenchimentos de todos os elementos */
     font-family: var(--fonte-primaria);
+    font-weight: bold;
 }
 
 .container {  display: grid;
@@ -31,6 +32,8 @@ body{
       "Conteudo Conteudo Conteudo Aside"
       "Rodape Rodape Rodape Rodape";
 }
+
+
   
 .Cabecalho { grid-area: Cabecalho; }
 
@@ -41,9 +44,23 @@ body{
     text-align: center;
 }
 
+
+
 .logo_img{
     margin-top: 10px;
     border-radius: 50%;
+}
+
+.Conteudo {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Banner Banner Banner"
+      "social social social"
+      "social social social";
+    grid-area: Conteudo;
 }
 
 .Navegacao { grid-area: Navegacao; }
@@ -68,20 +85,46 @@ body{
 
   
 .Aside { grid-area: Aside; }
-  
-.Conteudo {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Banner Banner Banner"
-      "social social social"
-      "social social social";
-    grid-area: Conteudo;
+
+.Aside{
+    margin-left: 20vh;
+
+}
+
+.Aside_lista{
+    list-style: none;
+
+}
+
+.Aside_link{
+    display: block;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.Aside_link:hover{
+    color: var(--cor-terciaria);
+}
+
+.Banner { grid-area: Banner; }
+
+.Banner{
+    width: 100%; /* O banner ocupará 100% da largura da página */
+    height: 300px; /* Defina a altura desejada para o banner */
+    background-image: url('../assets/icon1.png'); /* Coloque o caminho correto da sua imagem */
+    background-size: cover; /* A imagem cobrirá todo o espaço do banner */
+    background-position: center; /* Centraliza a imagem no banner */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    border-radius: 500px;
+    margin-top: 10px;
+    margin-left: 30px;
 }
   
-.Banner { grid-area: Banner; }
+
+  
+
   
 .social {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
